@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav's Personal Portfolio</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" type="text/css" href="static/main/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/portfolio.css' %}">
   </head>
 
   <body>
@@ -22,15 +22,15 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="{% url 'packages' %}">Packages</a></li>
-          <li class="main-nav__item"><a href="{% url 'customers' %}">Customers</a></li>
-          <li class="main-nav__item"><a href="{% url 'start-hosting' %}">Start Hosting</a></li>
+          <li class="main-nav__item nav-home"><a href="{% url 'packages' %}">Home</a></li>
+          <li class="main-nav__item"><a href="{% url 'customers' %}">Work</a></li>
+          <li class="main-nav__item"><a href="{% url 'start-hosting' %}">About Me</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="product-overview">
-        <h1>Get the freedom you deserve.</h1>
+        <h1>Hi I'm Abhinav, and I have a passion for coding.</h1>
       </section>
     </main>
     <footer class="main-footer">
