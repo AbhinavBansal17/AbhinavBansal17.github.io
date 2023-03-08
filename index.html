@@ -18,19 +18,98 @@
             <span class="toggle-button__bar"></span>
             <span class="toggle-button__bar"></span>
         </button>
-        <a href="{% url 'home' %}" class="brand">Abhinav Bansal</a>
+          <a href="{% url 'home' %}" class="brand"><img src="static/main/images/personal_portfolio.JPG"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item nav-home"><a href="{% url 'packages' %}">Home</a></li>
-          <li class="main-nav__item"><a href="{% url 'customers' %}">Work</a></li>
-          <li class="main-nav__item"><a href="{% url 'start-hosting' %}">About Me</a></li>
+          <li class="main-nav__item nav-home"><a href="#">Home</a></li>
+          <li class="main-nav__item"><a href="#filler">School</a></li>
+          <li class="main-nav__item"><a href="#projects">Projects</a></li>
+          <li class="main-nav__item"><a href="#about_me">About Me</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="product-overview">
         <h1>Hi I'm Abhinav, and I have a passion for coding.</h1>
+      </section>
+      <div id="filler" class="filler"></div>
+      <section id="school">
+        <h1 class="heading">Courses/Certificates</h1>
+        <div class="courses">
+            <div class="school-courses">
+                <h1 class="sub_heading">School Courses</h1>
+                <p>AP CSP - <a href="#">View Work</a></p>
+                <p>CS50’s Web Programming with Python and JavaScript</p>
+            </div>
+            <div class="certificates">
+              <h1 class="sub_heading">Certificates</h1>
+              <p>CSS - The Complete Guide 2023</p>
+              <p>CS50’s Web Programming with Python and JavaScript</p>
+            </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="testimonial">
+            <div class="testimonial__image-container">
+                <img src="static/main/images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+            </div>
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">uHost</h1>
+                <h2 class="testimonial__subtitle">
+                    <a href="https://abhinavb.pythonanywhere.com/">abhinavb.pythonanywhere.com</a>
+                </h2>
+                <p class="testimonial__text">Mobile responsive website built with CSS and JavaScript</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial__image-container">
+                <img src="static/main/images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+            </div>
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">Mike Statham</h1>
+                <h2 class="testimonial__subtitle">Founder of
+                    <a href="tech-analysis.com">tech-analysis.com</a>
+                </h2>
+                <p class="testimonial__text">uHost helped me realize my project with a highly constrained budget in like no time.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial__image-container">
+                <img src="static/main/images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+            </div>
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">Mike Statham</h1>
+                <h2 class="testimonial__subtitle">Founder of
+                    <a href="tech-analysis.com">tech-analysis.com</a>
+                </h2>
+                <p class="testimonial__text">uHost helped me realize my project with a highly constrained budget in like no time.</p>
+            </div>
+        </div>
+          <div class="testimonial">
+            <div class="testimonial__image-container">
+                <img src="static/main/images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+            </div>
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">Mike Statham</h1>
+                <h2 class="testimonial__subtitle">Founder of
+                    <a href="tech-analysis.com">tech-analysis.com</a>
+                </h2>
+                <p class="testimonial__text">uHost helped me realize my project with a highly constrained budget in like no time.</p>
+            </div>
+        </div>
+      </section>
+        <section id="about_me">
+        <h1 class="heading">About Me</h1>
+        <div class="about_container">
+            <div class="about_image-container">
+                <img src="static/main/images/personal_pic.jpg" class="about__image">
+            </div>
+            <div class="about_description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -45,7 +124,6 @@
         </ul>
       </nav>
     </footer>
-  <script src="{% static 'main/shared.js' %}"></script>
   </body>
 
 </html>
